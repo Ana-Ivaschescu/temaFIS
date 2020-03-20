@@ -13,12 +13,12 @@ public class ProcesorCompus implements Procesor {
 
     @Override
     public int proceseaza(ArrayList<Document> documente) {
-        int res = 0;
+        int rezultat = 0;
 
         for (Procesor procesor : procesoare) {
-            res += procesor.proceseaza(documente);
+            rezultat += procesor.proceseaza(documente);
         }
 
-        return res;
+        return rezultat;
     }
 }
